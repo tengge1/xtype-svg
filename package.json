@@ -1,0 +1,31 @@
+{
+    "name": "@tengge1/xtype-svg",
+    "version": "0.0.1",
+    "description": "",
+    "dependencies": {
+        "@tengge1/xtype.js": "^3.0.0"
+    },
+    "devDependencies": {
+        "rollup": "^0.59.2",
+        "rollup-plugin-node-resolve": "^3.4.0"
+    },
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/tengge1/xtype-svg.git"
+    },
+    "keywords": [
+        "xtype.js",
+        "svg",
+        "ui",
+        "progressive"
+    ],
+    "author": "tengge",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tengge1/xtype-svg/issues"
+    },
+    "homepage": "https://github.com/tengge1/xtype-svg"
+}

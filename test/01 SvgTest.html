@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>01 SvgTest</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+    <script src="../dist/xtype-svg.js"></script>
+    <script>
+        function CustomControl(options = {}) {
+            XType.SvgControl.call(this, options);
+        }
+
+        CustomControl.prototype = Object.create(XType.SvgControl.prototype);
+        CustomControl.prototype.constructor = CustomControl;
+
+        CustomControl.prototype.render = function () {
+            this.renderDom(this.createElement('circle'));
+        };
+
+        var dom = XType.SVG.create({
+            xtype: 'svg',
+            parent: document.body,
+            attr: {
+                width: 800,
+                height: 600,
+            },
+            children: [
+                new CustomControl({
+                    attr: {
+                        cx: 80,
+                        cy: 80,
+                        r: 50,
+                        stroke: '#555',
+                        'stroke-width': 2,
+                        fill: '#f00'
+                    },
+                    listeners: {
+                        click: () => {
+                            alert('You clicked!');
+                        }
+                    }
+                })
+            ]
+        });
+
+        dom.render();
+    </script>
+</body>
+
+</html>
