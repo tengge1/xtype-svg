@@ -1,9 +1,9 @@
 {
     "name": "@tengge1/xtype-svg",
-    "version": "0.0.1",
-    "description": "",
+    "version": "0.0.2",
+    "description": "xtype-svg将常用的svg标签封装为类，可以像ExtJs那样通过javascript动态生成svg文档。",
     "dependencies": {
-        "@tengge1/xtype.js": "^3.0.0"
+        "@tengge1/xtype.js": "^3.0.1"
     },
     "devDependencies": {
         "rollup": "^0.59.2",
